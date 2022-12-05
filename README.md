@@ -124,3 +124,16 @@ node1.link = node2 로 구성
 
 
 ## 트리구조
+---
+이진트리 -> 모든 노드의 자식이 최대 2개인 트리
+노드의 개수가 n개이면 간선은 n-1개
+높이가  h 이면 h~ 2^h -1 개의 노드를 가짐
+n개의 노드 이진 트리 높이 : log2(n+1) ~ n
+
+이진트리의 순회 (L : left child 이동, R : right child 이동, V : node 방문)
+* 전위 순회 (preorder traversal, VLR)
+ 부모 노드 방문, 왼쪽 트리 이동, 그 후 오른쪽 방문
+* 중위 순회 (inorder traversal, LVR)
+ 왼쪽으로 이동, Null 이면 부모 노드 방문 그 후 오른쪽 방문
+* 후위 순회 (postorder traversal, LRV)
+ 왼쪽으로 이동 오른쪽으로 이동 그 후 부모 노드 방문
