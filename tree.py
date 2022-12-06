@@ -85,8 +85,8 @@ def count_node(n):
 def count_leaf(n):
     if n in None:
         return 0
-    else n.left is None and n.right is None:
-        return 1:
+    elif n.left is None and n.right is None:
+        return 1
     else :
         return count_leaf(n.left) + count_leaf(n.right)
 
@@ -100,3 +100,6 @@ def calc_height(n):
         return hLeft +1
     else:
         return hRight + 1
+
+
+print('hello')
